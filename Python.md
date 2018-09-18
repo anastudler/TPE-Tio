@@ -1,4 +1,4 @@
-# TRABAJO PRÁCTICO ESPECIAL
+﻿# TRABAJO PRÁCTICO ESPECIAL
 
   
 
@@ -24,9 +24,48 @@
 
 Python se denomina **lenguaje interpretado** porque pasa por un intérprete que convierte el código que escribe en el idioma que entiende el procesador de su computadora. Un intérprete toma el código que escribe y ejecuta las acciones que haya especificado, crea las variables que has creado y realiza una gran cantidad de trabajo en segundo plano para asegurarse de que funcione sin problemas o te informa sobre errores.
 
+
+### TIPOS DE DATOS BÁSICOS
+
+En Python, y cuando se programa en general, necesitamos construir sistemas para manejar los datos que cambian con el tiempo. Esa información podría ser la ubicación de un avión, o la hora del día, o el programa de televisión que está viendo actualmente. Lo único importante es que puede ser diferente en diferentes momentos. Python usa _variables_ para definir cosas que están sujetas a cambios.
+
+
+En Python existen varios tipos de datos, comenzaremos por utilizar y entender los tres tipos datos básicos que tenemos en Python:
+
+* **Números:** como es el caso de 5 (entero), 34.21 (coma flotante) o también tenemos el caso de 3+8 (complejo).
+
+* **Cadenas de texto (strings):** por ejemplo la famosa frase _“Hola Mundo”_. Una cadena, llamada así porque son una serie de letras, números o símbolos conectados en orden, como si estuvieran unidos por una cuerda. Se pueden combinar varias cadenas usando +.
+
+* **Valores booleanos:** Verdadero y Falso
+
+Debemos tomar en cuenta que en Python no es necesario declarar el tipo de variable, como si es el caso de otros lenguajes de programación, como por ejemplo Java.
+
+  
+
+###OPERADORES
+
+El operador **==** es uno de los operadores de comparación; los otros son:
+
+* x != y x no es igual a y
+
+* x > y x es mayor que y
+
+* x < y x es menor que y
+
+* x >= y x es mayor o igual que y
+
+* x <= y x es menor o igual que y
+
+Aunque probablemente estas operaciones le resulten familiares, los símbolos en
+Python son diferentes de los matemáticos. Un error habitual es utilizar un signo
+igual sencillo (=) en lugar del doble (==). Recuerde que = es un operador de
+asignación y == es un operador de comparación.
+
+
+
 #### Métodos de las Listas
 Las listas en Python  tienen muchos métodos que podemos utilizar, entre todos ellos vamos a nombrar los más importantes.
- 
+
  
 #### Append()
 Este método nos permite agregar nuevos elementos a una lista.
