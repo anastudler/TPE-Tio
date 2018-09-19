@@ -24,6 +24,17 @@
 
 Python se denomina **lenguaje interpretado** porque pasa por un intérprete que convierte el código que escribe en el idioma que entiende el procesador de su computadora. Un intérprete toma el código que escribe y ejecuta las acciones que haya especificado, crea las variables que has creado y realiza una gran cantidad de trabajo en segundo plano para asegurarse de que funcione sin problemas o te informa sobre errores.
 
+### Principales Usos de Python
+
+Es un lenguaje de programación versátil **multiplataforma y multiparadigma** que se destaca por su código legible y limpio. La licencia de código abierto permite su utilización en distintos contextos sin la necesidad de abonar por ello y se emplea en plataformas de alto tráfico como Google, YouTube o Facebook. Su objetivo es la **automatización de procesos para ahorrar tanto complicaciones como tiempo**, los dos pilares en cualquier tarea profesional. Dichos procesos se reducirán en pocas líneas de código que insertarás en una variedad de plataformas y sistemas operativos. Python es la opción por defecto de lenguaje de scripting para muchos desarrolladores.
+Python es ideal para trabajar con **grandes volúmenes de datos* porque favorece su extracción y procesamiento, siendo el elegido por las empresas de **Big Data**. A nivel científico, posee una amplia biblioteca de recursos con especial énfasis en las matemáticas para aspirantes a programadores en áreas especializadas. 
+Asimismo, Python puede ayudarte a la hora de llevar a cabo una **visualización de datos avanzada**, esencial en el proceso de decisión. 
+Python, asimismo, también está consolidándose a la hora de dar acceso al trabajo con matrices y tablas de forma eficiente, a ejecutar cálculo estadístico avanzado y a aplicar algoritmos de **Machine Learning** sobre esas estructuras.
+#### Frameworks Web
+Entre sus numerosos Frameworks, nos podemos encontrar unas bestias: **Django** y **Flask**.
+Django sería lo más cercano a Laravel en PHP o Ruby on Rails para Ruby. Un marco de trabajo completo y eficiente para desarrollar Aplicaciones Web de una gran complejidad con un mínimo esfuerzo. Casi cualquier cosa que necesites posiblemente estará integrado.
+Para desarrollos altamente personalizados o con unos tiempos cortos, nos encontramos a Flask. Autodenominado microframework, pero con funcionalidades sencillas e inteligentes para construir cualquier sitio que se te pase por la cabeza.
+
 
 ### TIPOS DE DATOS BÁSICOS
 
