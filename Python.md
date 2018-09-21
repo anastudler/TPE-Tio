@@ -128,3 +128,28 @@ Para definir un diccionario vacío hay dos opciones:
 capitales = {}
 capitales = dict() 
 ```
+
+### El bucle _for_
+En general, un bucle es una estructura de control que repite un bloque de instrucciones. Un bucle _for_ es un bucle que repite el bloque de instrucciones un número prederminado de veces. El bloque de instrucciones que se repite se suele llamar cuerpo del bucle y cada repetición se suele llamar **iteración**.
+
+La sintaxis de un bucle for es la siguiente:
+
+**for** _variable_ **in** _elemento iterable_ (lista, cadena, range, etc.):
+
+	cuerpo del bucle
+  
+No es necesario definir la variable de control antes del bucle, aunque se puede utilizar como variable de control una variable ya definida en el programa.
+El cuerpo del bucle se ejecuta tantas veces como elementos tenga el elemento recorrible (elementos de una lista o de un _range()_, caracteres de una cadena, etc.).
+
+
+### El bucle while
+Un bucle _while_ permite repetir la ejecución de un grupo de instrucciones mientras se cumpla una condición (es decir, mientras la condición tenga el valor _True_).
+La sintaxis del bucle _while_ es la siguiente:
+
+**while** _condicion_:
+	cuerpo del bucle
+ 
+Cuando llega a un bucle _while_, Python evalúa la condición y, si es cierta, ejecuta el cuerpo del bucle. Una vez ejecutado el cuerpo del bucle, se repite el proceso (se evalúa de nuevo la condición y, si es cierta, se ejecuta de nuevo el cuerpo del bucle) una y otra vez mientras la condición sea cierta. Únicamente cuando la condición sea falsa, el cuerpo del bucle no se ejecutará y continuará la ejecución del resto del programa.
+La variable o las variables que aparezcan en la condición se suelen llamar **variables de control**. Las variables de control deben definirse antes del bucle while y modificarse en el bucle while.
+
+
