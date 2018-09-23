@@ -216,3 +216,26 @@ Una tupla permite tener agrupados un conjunto inmutable de elementos, es decir, 
 tuplaDiasSemana = (“LU”, “MA”, “MI”, “JU”, “VI”, “SA”, “DO”)  # Declara tupla
 ```
 
+### Diccionarios o matrices asociativas
+ 
+Los diccionarios son objetos que contienen una lista de parejas de elementos. De cada pareja un elemento es la clave, que no puede repetirse, y, el otro, un valor asociado. La clave que se utiliza para acceder al valor tiene que ser un dato inmutable como una cadena, mientras que el valor puede ser un _número_, una _cadena_, un _booleano_ (True/False), una _lista_ o una _tupla_.
+Los pares **clave-valor** están separados por dos puntos, las parejas por comas y todo el conjunto se encierra entre llaves.
+ 
+Ejemplos:
+```python
+capitales = {'Chile':'Santiago', 'España':'Madrid', 'Francia':'París'}
+```
+ 
+Para definir un diccionario vacío hay dos opciones:
+```python
+capitales = {}
+capitales = dict() 
+```
+ 
+
+
+
+### Como lenguaje orientado a objetos.
+
+El objetivo principal de un lenguaje orientado a objetos es hacer que el código sea reutilizable; esto se logra usando clases y objetos. Por ejemplo: Para diseñar un nuevo tipo de automóvil, se puede comenzar con lo que tienen en común: ruedas, asientos, un marco. Luego de determinar qué tienen los automóviles en común, podemos implementar más fácilmente cualquier tipo de automóvil que deseemos empezando a partir de ese modelo básico.
+
