@@ -153,3 +153,49 @@ Cuando llega a un bucle _while_, Python evalúa la condición y, si es cierta, e
 La variable o las variables que aparezcan en la condición se suelen llamar **variables de control**. Las variables de control deben definirse antes del bucle while y modificarse en el bucle while.
 
 
+### Listas
+Una lista es una estructura de datos y un tipo de dato en python con características especiales. Lo especial de las listas en Python es que nos permiten almacenar cualquier tipo de valor como enteros, cadenas y hasta otras funciones; por ejemplo:
+
+```python
+lista = [1, 2.5, 'programacion', [5,6] ,4]
+```
+Una lista es un arreglo de elementos donde podemos ingresar cualquier tipo de dato, para acceder a estos datos podemos hacer mediante un índice.
+ 
+```python
+print lista[0] # 1
+print lista[1] # 2.5
+print lista[2] # programacion
+print lista[3] # [5,6]
+print lista[3][0] # 5
+print lista[3][1] # 6
+print lista[1:3] # [2.5, 'programacion']
+print lista[1:6] # [2.5, 'programacion', [5, 6], 4]
+print lista[1:6:2] # [2.5, [5, 6]]
+```
+Como pueden darse cuenta podemos hasta insertar una lista dentro de otra lista.
+Si no quieres estar imprimir uno por uno los elementos de una lista, puedes recorrerlo utilizando un **for**.
+ 
+```python
+for element in lista:
+    print element
+```
+#### Métodos de las Listas
+Las listas en Python  tienen muchos métodos que podemos utilizar, entre todos ellos vamos a nombrar los más importantes.
+ 
+ 
+#### Append()
+Este método nos permite agregar nuevos elementos a una lista.
+ 
+```python
+my_list.append(10) # [2, 5, 'programacion', 1.2, 5, 10]
+my_list.append([2,5]) # [2, 5, 'programacion', 1.2, 5, [2, 5]]
+```
+Podemos agregar cualquier tipo de elemento a una lista, pero tengan en cuenta lo que pasa cuando agregamos una lista dentro de otra, esta lista se agrega como uno y solo un elemento.
+ 
+#### Remove()
+El método remove va a remover un elemento que se le pase como parámentro de la lista a donde se le esté aplicando.
+ 
+```python
+my_list.remove(2) # [5, 'programacion', 1.2, 5]
+```
+En este ejemplo estamos removiendo el elemento 2, de la lista que tiene por nombre _"my_list"_.
