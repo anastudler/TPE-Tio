@@ -72,62 +72,127 @@ Python son diferentes de los matemáticos. Un error habitual es utilizar un sign
 igual sencillo (=) en lugar del doble (==). Recuerde que = es un operador de
 asignación y == es un operador de comparación.
 
+### Comentarios
+
+Los comentarios en Python, al igual que sucede en otros lenguajes de programación, sirven para explicar a las personas que puedan leer el programa en el futuro, qué es lo que hace el programa, así como explicar algunas partes del código. Estos comentarios son ignorados por las computadoras cuando ejecutan el código.
+En python los comentarios se pueden poner de dos formas:
+* Escribiendo el símbolo almohadilla delante de la línea de texto donde está el comentario.
+```python
+# Este es un comentario en python
+```
+* Escribiendo triple comilla doble (“””) al principio y al final del comentario (que puede ocupar más de una línea).
+```python
+""" Este es un comentario multilínea. Y
+este texto solo quiere ocupar
+múltiples líneas """
+```
+  
+### Salida por pantalla: la función print()
+En los programa, para mostrar texto o variables hay que utilizar la función _print()_.
+La función _print()_ permite mostrar texto en pantalla. El texto a mostrar se escribe como argumento de la función:
+
+ ```python
+print("Hola")
+Hola
+```
+Las cadenas se pueden delimitar tanto por comillas dobles (") como por comillas simples ('). Una cadena debe abrirse y cerrarse con el mismo tipo de comillas.
+```python
+print('Hola')
+```
+La función _print()_ permite incluir variables o expresiones como argumento, lo que nos permite combinar texto y variables:
+
+```python
+nombre = "Pepe"
+edad = 25
+print("Me llamo", nombre, "y tengo", edad, "años.")
+Me llamo Pepe y tengo 25 años.
+```
+  
+### Entrada por teclado: la función input()
+
+La función _input()_ permite obtener texto escrito por teclado. Al llegar a la función, el programa se detiene esperando que se escriba algo y se pulse la tecla **Intro**, como muestra el siguiente ejemplo:
+
+```python
+print("¿Cómo se llama?")
+nombre = input()
+print(f"Me alegro de conocerle, {nombre}")
+
+¿Cómo se llama?
+Pepe
+Me alegro de conocerle, Pepe
+```
+
+### Conversión de tipos
+De forma predeterminada, la función _input()_ convierte la entrada en una cadena, aunque escribamos un número. Si intentamos hacer operaciones, se producirá un error.
+Si se quiere que Python intérprete la entrada como un número entero, se debe utilizar la función _int()_ de la siguiente manera:
+
+```python
+cantidad = int(input("Dígame una cantidad en pesetas: "))
+```
+
+De la misma manera, para que Python interprete la entrada como un número decimal, se debe utilizar la función _float()_.
+
+```python
+cantidad = float(input("Dígame una cantidad en euros (hasta con 2 decimales): "))
+```
+
+ 
+### Sentencias condicionales: if ... elif ... else ...
+La estructura de control **if** ... permite que un programa ejecute unas instrucciones cuando se cumplan una condición. En inglés "if" significa "si" (condición). La orden en Python se escribe así:
+
+**if** condición:
+
+    aquí van las órdenes que se ejecutan si la
+
+    condición es cierta
+
+    y que pueden ocupar varias líneas
+
+La primera línea contiene la condición a evaluar y es una expresión lógica. Esta línea debe terminar siempre por dos puntos (:).
+A continuación viene el bloque de órdenes que se ejecutan cuando la condición se cumple (es decir, cuando la condición es verdadera). Es importante señalar que este bloque debe ir sangrado (indentado), puesto que Python utiliza el sangrado para reconocer las líneas que forman un bloque de instrucciones.
+Los fragmentos de código escritos en el mismo nivel de sangría en Python constituyen un bloque de código.
 
 
-#### Métodos de las Listas
-Las listas en Python  tienen muchos métodos que podemos utilizar, entre todos ellos vamos a nombrar los más importantes.
+#### Bifurcaciones: **if** ... **else** ...
+La estructura de control _if ... else ..._ permite que un programa ejecute unas instrucciones cuando se cumple una condición y otras instrucciones cuando no se cumple esa condición.
 
- 
-#### Append()
-Este método nos permite agregar nuevos elementos a una lista.
- 
-```python
-my_list.append(10) # [2, 5, 'programacion', 1.2, 5, 10]
-my_list.append([2,5]) # [2, 5, 'programacion', 1.2, 5, [2, 5]]
-```
-Podemos agregar cualquier tipo de elemento a una lista, pero tengan en cuenta lo que pasa cuando agregamos una lista dentro de otra, esta lista se agrega como uno y solo un elemento.
- 
-#### Remove()
-El método remove va a remover un elemento que se le pase como parámentro de la lista a donde se le esté aplicando.
- 
-```python
-my_list.remove(2) # [5, 'programacion', 1.2, 5]
-```
-En este ejemplo estamos removiendo el elemento 2, de la lista que tiene por nombre _"my_list"_.
- 
- 
-#### Index()
-Index devuelve el número de índice del elemento que le pasemos por parámetro.
- 
-```python
-my_list.index('programacion') # 2
-```
-Aquí estamos preguntando por el índice de la cadena 'programacion' dentro de la lista _"my_list"_, esto devuelve 2.
- 
- 
-### Tuplas
- 
-Una tupla permite tener agrupados un conjunto inmutable de elementos, es decir, en una tupla no es posible agregar ni eliminar elementos. Las tuplas se declaran separando los elementos por comas y éstos, opcionalmente, pueden ir entre paréntesis. Se recomienda el uso de paréntesis para evitar ambigüedades del tipo: print(9, 8, 7) y print((9, 8, 7)).
-```python
-tuplaDiasSemana = (“LU”, “MA”, “MI”, “JU”, “VI”, “SA”, “DO”)  # Declara tupla
-```
- 
- 
-### Diccionarios o matrices asociativas
- 
-Los diccionarios son objetos que contienen una lista de parejas de elementos. De cada pareja un elemento es la clave, que no puede repetirse, y, el otro, un valor asociado. La clave que se utiliza para acceder al valor tiene que ser un dato inmutable como una cadena, mientras que el valor puede ser un _número_, una _cadena_, un _booleano_ (True/False), una _lista_ o una _tupla_.
-Los pares **clave-valor** están separados por dos puntos, las parejas por comas y todo el conjunto se encierra entre llaves.
- 
-Ejemplos:
-```python
-capitales = {'Chile':'Santiago', 'España':'Madrid', 'Francia':'París'}
-```
- 
-Para definir un diccionario vacío hay dos opciones:
-```python
-capitales = {}
-capitales = dict() 
-```
+**if** _condición_:
+
+	aquí van las órdenes que se ejecutan si la condición es cierta
+
+	y que pueden ocupar varias líneas
+
+**else**:
+
+	y aquí van las órdenes que se ejecutan si la condición es
+
+	falsa y que también pueden ocupar varias líneas
+
+  
+ La primera línea contiene la condición a evaluar. A continuación viene el bloque de código que se ejecuta cuando la condición se cumple (es decir, cuando la condición es verdadera).
+Después viene la línea con la orden else, que indica a Python que el bloque que viene a continuación se tiene que ejecutar cuando la condición no se cumpla (es decir, cuando sea falsa). La línea con la orden else no debe incluir nada más que el else y los dos puntos.
+En último lugar está el bloque de instrucciones sangrado que corresponde al else.
+Si por algún motivo no se quisiera ejecutar ninguna orden en alguno de los bloques, el bloque de órdenes debe contener al menos la orden _pass_ (esta orden le dice a Python que no tiene que hacer nada).
+  
+
+#### Más de dos alternativas: **if** ... **elif** ... **else** ...
+La estructura de control _if ... elif ... else ..._ permite encadenar varias condiciones. _elif_ es una contracción de _else if_. La orden en Python se escribe así:
+
+**if** _condición1_:
+	bloque 1
+
+**elif** _condición2_:
+	bloque 2
+
+**else**:
+	bloque 3
+
+Si se cumple la condición 1, se ejecuta el bloque 1.
+Si no se cumple la condición 1 pero sí que se cumple la condición 2, se ejecuta el bloque 2.
+Si no se cumplen ni la condición 1 ni la condición 2, se ejecuta el bloque 3.
+Se pueden escribir tantos bloques elif como sean necesarios. El bloque else (que es opcional) se ejecuta si no se cumple ninguna de las condiciones anteriores.
+
+
 
 ### El bucle _for_
 En general, un bucle es una estructura de control que repite un bloque de instrucciones. Un bucle _for_ es un bucle que repite el bloque de instrucciones un número prederminado de veces. El bloque de instrucciones que se repite se suele llamar cuerpo del bucle y cada repetición se suele llamar **iteración**.
