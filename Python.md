@@ -199,3 +199,20 @@ El método remove va a remover un elemento que se le pase como parámentro de la
 my_list.remove(2) # [5, 'programacion', 1.2, 5]
 ```
 En este ejemplo estamos removiendo el elemento 2, de la lista que tiene por nombre _"my_list"_.
+
+#### Index()
+Index devuelve el número de índice del elemento que le pasemos por parámetro.
+ 
+```python
+my_list.index('programacion') # 2
+```
+Aquí estamos preguntando por el índice de la cadena 'programacion' dentro de la lista _"my_list"_, esto devuelve 2.
+ 
+ 
+### Tuplas
+ 
+Una tupla permite tener agrupados un conjunto inmutable de elementos, es decir, en una tupla no es posible agregar ni eliminar elementos. Las tuplas se declaran separando los elementos por comas y éstos, opcionalmente, pueden ir entre paréntesis. Se recomienda el uso de paréntesis para evitar ambigüedades del tipo: print(9, 8, 7) y print((9, 8, 7)).
+```python
+tuplaDiasSemana = (“LU”, “MA”, “MI”, “JU”, “VI”, “SA”, “DO”)  # Declara tupla
+```
+
